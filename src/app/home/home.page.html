@@ -1,0 +1,60 @@
+<ion-content [fullscreen]="true">
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">This is the menu content.</ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon slot="icon-only" name="search"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title>Toko Buku Online</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <strong><b>Konten</b></strong>
+      <ion-grid>
+        <ion-row>
+          <ion-col *ngFor = "let i of [1,2,3,4]">
+            <ion-card>
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
+            
+              <ion-card-content>
+                Here's a small text description for the card content. Nothing more, nothing less.
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </div>
+</ion-content>
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button tab="home">
+    <ion-icon name="home-outline"></ion-icon>
+    Home
+  </ion-tab-button>
+  <ion-tab-button tab="Kategori" (click)="kategori()">
+    <ion-icon name="menu-outline"></ion-icon>
+    Kategori
+  </ion-tab-button>
+  <ion-tab-button tab="basket-outline">
+    <ion-icon name="basket-outline"></ion-icon>
+    Keranjang
+  </ion-tab-button>
+</ion-tab-bar>

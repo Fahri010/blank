@@ -1,0 +1,7 @@
+{
+  "name": "myapk",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
